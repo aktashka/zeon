@@ -43,8 +43,7 @@ ol {
     list-style: none;
 }
 
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a[class] {
+a {
     text-decoration: none;
 }
 
