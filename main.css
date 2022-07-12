@@ -82,11 +82,8 @@
 }
 
 .header-nav {
-    width: 50%;
+    width: 80%;
 }
-
-
-
 
 
 .header-nav-list {
@@ -104,19 +101,23 @@
 
     text-align: center;
     letter-spacing: 1.5px;
+    padding: 3px 8px;
 
     color: #818181;
+    cursor: pointer;
 }
 
 .nav-list:hover:not(.active) {
     font-weight: 800;
-    color: #3D8B74;
+    background-color: #ddd;
 }
 
 .nav-list.active {
     font-weight: 800;
     color: #3D8B74;
 }
+
+
 
 @media (max-width:1024px) {
     .menu {
@@ -218,10 +219,11 @@
     align-items: center;
 }
 
+
+
 @media (max-width: 1024px) {
     .main-inner {
-        background: none;
-        margin: 0px;
+        margin: 20px 30px 0px 30px;
     }
 }
 
@@ -352,6 +354,11 @@
 
 .nav-list.catalog {
     font-size: 16px;
+}
+
+.nav-list.catalog.active {
+    font-weight: 800;
+    color: #3D8B74;
 }
 
 @media (max-width: 1024px) {

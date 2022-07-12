@@ -1,7 +1,11 @@
-let menuBtn = document.querySelector('.burger-menu');
+let menuBurger = document.querySelector('.burger-menu');
 let headerNavList = document.querySelector('.header-nav-list');
 
-menuBtn.addEventListener('click', function () {
-    menuBtn.classList.toggle('active');
+
+
+menuBurger.addEventListener('click', function () {
+    menuBurger.classList.toggle('active');
     headerNavList.classList.toggle('active');
+    
 })
+
