@@ -86,6 +86,8 @@
 }
 
 
+
+
 .header-nav-list {
     display: flex;
     justify-content: space-around;
@@ -119,7 +121,7 @@
 
 
 
-@media (max-width:1024px) {
+@media (max-width:920px) {
     .menu {
         display: flex;
         justify-content: flex-end;
@@ -153,7 +155,6 @@
         top: calc(50% + 5px);
     }
 
-    /* Меняем гамбургер иконку, когда меню открыто */
     .burger-menu.active span:nth-of-type(1) {
         display: none;
     }
@@ -188,7 +189,6 @@
         padding-top: 50px;
         position: fixed;
     }
-
 
     .header-nav {
         width: 0;
