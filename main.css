@@ -440,6 +440,7 @@
 .item-img {
     width: 100%;
     min-width: 224px;
+    max-width: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -456,6 +457,21 @@
     padding-top: 26px;
     display: none;
 }
+
+
+/* @media (max-width: 2020px) {
+    .item-img {
+        margin-top: 10px;
+        max-width: 180px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .img-text {
+        font-size: 15px;
+        padding-top: 3px;
+    }
+} */
 
 @media (max-width: 1024px) {
     .item-img {
@@ -522,7 +538,7 @@
 
 
 
-@media (max-width: 1170px) {
+@media (max-width: 1200px) {
     .item-title {
         font-size: 16px;
     }
@@ -533,7 +549,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 535px) {
     .item-title {
         font-size: 13px;
     }
@@ -562,13 +578,19 @@
 .catalog-right-side {
     width: 25%;
     height: 100%;
+    margin-left: 100px;
 }
 
 .right-side-inner {
-    margin-left: 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+.social-networks-wrapper {
+    display: flex;
+    justify-content: flex-end;
+
 }
 
 .social-networks {
@@ -589,6 +611,7 @@
 @media (max-width: 1024px) {
     .catalog-right-side {
         width: 100%;
+        margin: 0px;
     }
 
     .right-side-inner {
@@ -601,6 +624,11 @@
         display: flex;
         margin: 0px 16px;
     }
+
+    .social-networks-wrapper {
+        margin-top: 50px;
+        justify-content: center;
+    }
 }
 
 
@@ -612,6 +640,15 @@
 .tag-block {
     width: 100%;
     margin-top: 62px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.tag-block-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 
@@ -631,6 +668,12 @@
     .tag-block {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tag-block-inner {
+        display: flex;
         justify-content: center;
         align-items: center;
     }
@@ -692,13 +735,21 @@
 .author {
     width: 100%;
     margin-top: 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.author-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .author-img {
     margin-top: 17px;
     width: 100%;
     max-width: 277px;
-    height: 277px;
 }
 
 
@@ -840,9 +891,10 @@
 }
 
 .input-block {
-    width: 120%;
+    width: 130%;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 41px;
 }
 
